@@ -1,0 +1,1 @@
+docker run -it --rm -v $PWD:/sharedFolder ubuntu /bin/bash /sharedFolder/ubuntuInit.sh
