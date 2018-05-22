@@ -1,7 +1,7 @@
-# docker run -it \
+# docker run -it --rm \
 #	-v $PWD:/sharedFolder \
 #	--name ubuntu-gpp-1 \
-#	ubuntu-gpp /bin/bash
+#	ubuntu-gpp /bin/zsh
 
 FROM ubuntu:18.04
 
@@ -11,4 +11,8 @@ RUN apt-get update && apt-get install -y \
 vim \
 zsh \ 
 git \ 
-g++ 
+g++ \ 
+wget 
+
+RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
+
