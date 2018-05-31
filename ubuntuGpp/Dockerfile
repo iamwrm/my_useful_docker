@@ -3,6 +3,8 @@
 #	--name ubuntu-gpp-1 \
 #	ubuntu-gpp /bin/zsh
 
+# docker build -t ubuntu-gpp .
+
 FROM ubuntu:18.04
 
 RUN sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
@@ -12,7 +14,8 @@ vim \
 zsh \ 
 git \ 
 g++ \ 
-wget 
+wget \
+make
 
 RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
 
