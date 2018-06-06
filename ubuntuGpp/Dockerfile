@@ -14,6 +14,8 @@ vim \
 zsh \ 
 git \ 
 g++ \ 
+python3 \ 
+python3-pip \ 
 wget \
 make
 
