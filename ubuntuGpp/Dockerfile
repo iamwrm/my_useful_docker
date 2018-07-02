@@ -14,10 +14,13 @@ vim \
 zsh \ 
 git \ 
 g++ \ 
+gdb \ 
 python3 \ 
 python3-pip \ 
 wget \
 make
+
+RUN pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple  gdbgui
 
 RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
 
