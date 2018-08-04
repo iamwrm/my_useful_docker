@@ -1,0 +1,1 @@
+sed -i '1s/^/Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch\n/' /etc/pacman.d/mirrorlist
